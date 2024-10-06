@@ -1,9 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import { RouterProvider } from "react-router-dom";
 import Home from "./routes/home";
-import About from "./routes/about";
+import About from "./components/about";
 import Contact from "./routes/contact";
-import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import "./App.css";
 
@@ -18,7 +17,7 @@ function App() {
       ),
     },
     {
-      path: "/about",
+      path: "#about",
       element: (
         <>
           <About/>
@@ -26,7 +25,7 @@ function App() {
       ),
     },
     {
-      path: "/contact",
+      path: "#contact",
       element: (
         <>
           <Contact/>
